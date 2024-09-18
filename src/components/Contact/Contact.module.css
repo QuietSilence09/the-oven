@@ -1,0 +1,87 @@
+.contactsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.contactsContainer {
+  width: 100%;
+  background-color: #faa441;
+  padding: 25px;
+  text-align: center;
+}
+
+.contactDetails {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+.contactDetails p {
+  margin: 10px 0;
+}
+
+.contactDetails a {
+  color: #333;
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+.contactDetails a:hover {
+  text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}
+
+.socialLinks {
+  margin-top: 20px;
+}
+
+.socialList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Увеличиваем расстояние между элементами */
+}
+
+.socialList li {
+  display: flex;
+  align-items: center;
+  
+}
+
+/* Стилизация социальных ссылок */
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  font-size: 1.2rem;
+
+  transition: color 0.3s ease, transform 0.3s ease; /* Анимация при наведении */
+}
+.socialLinks a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #333;
+    transition: 0.2s;
+}
+
+.socialLinks a:hover {
+  color: #fff; /* Цвет при наведении */
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .contactsContainer{
+    padding: 10px;
+    font-size: 10px;
+  }
+  .socialList{
+    flex-direction: column;
+  }
+}
+
