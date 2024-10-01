@@ -10,6 +10,7 @@ import BurgerImage3 from "../../images/cheeseburger2-removebg-preview.png"
 import Philly from "../../images/phillycheese-removebg-preview.png"
 import Fishsandwich from "../../images/fishsandwich-removebg-preview.png"
 import Eggbaconburger from "../../images/omelette_burger-removebg-preview.png"
+import bossburger from "../../images/bossburger.png"
 //pizzas
 import Chicken from "../../images/spicy.png"
 import Vegeterian from "../../images/vegeterian.png"
@@ -29,9 +30,20 @@ import MozSticks from "../../images/mozzarella-sticks-removebg-preview.png"
 import MashedPotatoe from "../../images/mashedpotatoe-removebg-preview.png"
 import Jalapeno from "../../images/jalapeno-removebg-preview.png"
 import ChickenLoadedFries from "../../images/mix-removebg-preview.png"
+import Lamboverrice from "../../images/lamboverrice.png"
+import ChickenOverrice from "../../images/chickenoverrice.png"
+import MixedOverrice from "../../images/mixedoverrice.png"
+import chickenwrap from "../../images/Crispy-chicken-wrap_post_01-removebg-preview.png"
+//gyros
+import MixedGyro from "../../images/mixed gyro.png"
+import chickengyro from "../../images/chicken gyro.png"
+import lambgyro from "../../images/lamb gyro.png"
 //deserts
 import CheeseCake from "../../images/cheesecake-removebg-preview.png"
 import Brownie from "../../images/brownie-removebg-preview.png"
+import rasmalai from "../../images/traditional_rasmalai_recipe-removebg-preview.png"
+//salad 
+import salad from "../../images/Simple-Tomato-Salad-2-768x1152-removebg-preview.png"
 
 
 export interface Product {
@@ -331,6 +343,42 @@ export const products: Product[] = [
     image: ChickenLoadedFries,
     price:{
       "Regular" : "$8",
+    },
+    category: "Extra meal"
+  },
+  {
+    id: 27,
+    name: "Rasmalai",  
+    image: rasmalai,
+    price:{
+      "Regular" : "$5",
+    },
+    category: "Deserts"
+  },
+  {
+    id: 28,
+    name: "Lamb Over Rice",  
+    image: Lamboverrice,
+    price:{
+      "Regular" : "$9",
+    },
+    category: "Extra meal"
+  },
+  {
+    id: 29,
+    name: "Chicken Over Rice",  
+    image: ChickenOverrice,
+    price:{
+      "Regular" : "$8",
+    },
+    category: "Extra meal"
+  },
+  {
+    id: 30,
+    name: "Mixed Over Rice",  
+    image: MixedOverrice,
+    price:{
+      "Regular" : "$10",
     },
     category: "Extra meal"
   },

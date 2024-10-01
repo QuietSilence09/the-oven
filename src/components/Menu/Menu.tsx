@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "../Header/Header";
 import { products } from "./products";
 import styles from "./Menu.module.css";
+import ProductCard from "../ProductCard/ProductCard";
 
 
 const groupProductsByCategory = () => {
@@ -25,24 +26,7 @@ const Menu: React.FC = () => {
             <h2 className={styles.category}>{group.category}</h2>
             <div className={styles.productList}>
               {group.items.map((product) => (
-                <div key={product.id} className={styles.productCard}>
-                  <div className={styles.productImageContainer}>
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className={styles.productImage}
-                    />
-                  </div>
-                  <h3>{product.name}</h3>
-                  <div className={styles.priceList}>
-                    {Object.entries(product.price).map(([size, price]) => (
-                      <div key={size} className={styles.priceRow}>
-                        <span className={styles.size}>{size}</span>
-                        <span className={styles.price}>{price}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+                <ProductCard key={product.id} product={product}/>
               ))}
             </div>
           </div>
